@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototype_1_Debug_Elias.unity
     guid: afa38dbc444f4a34aa8baa0614f3660e
+  - enabled: 1
+    path: Assets/Scenes/Prototype_Final.unity
+    guid: 9042106ed16b9eb41a81f078da1d6a9f
   m_configObjects: {}
