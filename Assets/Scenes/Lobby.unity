@@ -148,8 +148,10 @@ MonoBehaviour:
   ReadyTimeHold: 1
   timer: 0
   StartGameBool: 0
-  SceneToLoad: Prototype_Final
+  SceneToLoad: Niveau_1
   PlayerPrefabs:
+  - {fileID: 1146608794321556, guid: 85a77f01976a46542a4d1434accac885, type: 2}
+  - {fileID: 1301415456400836, guid: 9592c5cb23f10914295548382bf68613, type: 2}
   - {fileID: 1146608794321556, guid: 85a77f01976a46542a4d1434accac885, type: 2}
   - {fileID: 1301415456400836, guid: 9592c5cb23f10914295548382bf68613, type: 2}
   PrefabsAvailable: 
