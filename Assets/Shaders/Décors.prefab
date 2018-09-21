@@ -795,7 +795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4515864075378408}
   m_Layer: 0
-  m_Name: "D\xE9cors"
+  m_Name: "De\u0301cors"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
