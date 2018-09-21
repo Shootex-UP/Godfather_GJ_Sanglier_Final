@@ -117,7 +117,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1385628661878402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.86, y: -1.36, z: -0.07845974}
+  m_LocalPosition: {x: -18.358698, y: 2.4968784, z: -14.708538}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4026430800634218}
@@ -225,6 +225,7 @@ MonoBehaviour:
   Holding: 0
   HoldingBlock: {fileID: 0}
   MaxForce: 6000
+  idcontroller: 0
   origianl_rotation: {x: 0, y: 0, z: 0, w: 0}
   rotation: 0
 --- !u!114 &114408415422418964
