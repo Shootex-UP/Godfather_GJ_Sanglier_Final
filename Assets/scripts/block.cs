@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class block : MonoBehaviour {
     public List<Collider2D> ObjectColliding;
@@ -30,11 +31,11 @@ public class block : MonoBehaviour {
                 first_to_land = true;
                 Debug.Log("Cube posé");
                 //Barre.GetComponent<Image>().fillAmount += 0.05f;
+                if(SceneManager.GetActiveScene().name == "Niveau_2")
                 if (Barre.transform.parent.gameObject.activeSelf)
                 {
                     Barre.GetComponent<barre_super>().remplisage();
                 }
-                
             }
         }
         else

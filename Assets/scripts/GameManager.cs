@@ -10,7 +10,7 @@ namespace Manager
         public Transform EndCanvas;
         private Text EndText;
         private static bool created = false;
-
+        public int idlevel;
         void Awake()
         {
             if (!created)
@@ -22,6 +22,7 @@ namespace Manager
 
         private void Start()
         {
+            idlevel = 1;
             EndText = EndCanvas.Find("EndText").GetComponent<Text>();
         }
 
@@ -46,13 +47,14 @@ namespace Manager
             EndText.color = Color.green;
             string NextLevel = "Niveau_";
             string currentlevelname = SceneManager.GetActiveScene().name;
-            string currentlevel = currentlevelname[currentlevelname.Length - 1].ToString();
+            idlevel ++;
+            Debug.Log(idlevel);
             Transform PlayerManager = GameObject.Find("PlayerManager").transform;
             for (int i = 0; i < PlayerManager.childCount; i++)
             {
                 Destroy(PlayerManager.GetChild(i).gameObject);
             }
-            SceneManager.LoadScene(NextLevel+(currentlevel+1));
+            SceneManager.LoadScene(NextLevel+(idlevel));
         }
 
         private void DisplayEndCanvas()
