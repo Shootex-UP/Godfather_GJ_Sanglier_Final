@@ -8,6 +8,7 @@ public class Anchor : MonoBehaviour {
     public float MaxForce;
     private SpringJoint2D SpringJoint;
     private Transform CharaterTransform;
+    public int idcontroller;
     private Vector2 Offset;
     private Rigidbody2D body;
     private Transform StartTransform;
@@ -20,6 +21,7 @@ public class Anchor : MonoBehaviour {
     void Start () {
         SpringJoint = GetComponent<SpringJoint2D>();
         CharaterTransform = transform.parent.GetChild(0);
+        idcontroller = CharaterTransform.GetComponent<CharacterController>().controllerId;
         Offset = transform.position - CharaterTransform.position;
         body = GetComponent<Rigidbody2D>();
         SpringJoint = GetComponent<SpringJoint2D>();
@@ -56,10 +58,10 @@ public class Anchor : MonoBehaviour {
         }
 
         // CUBE ROTATION 
-        if (Input.GetKeyUp(KeyCode.Joystick1Button5))
+        if (Input.GetButtonDown("LB_"+idcontroller))
         {
             rotation -= 90;
-        }if (Input.GetKeyUp(KeyCode.Joystick1Button4))
+        }if (Input.GetButtonDown("RB_" + idcontroller))
         {
             rotation += 90;
         }

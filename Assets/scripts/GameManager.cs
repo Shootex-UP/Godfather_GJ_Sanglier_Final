@@ -44,7 +44,15 @@ namespace Manager
             DisplayEndCanvas();
             EndText.text = "Win";
             EndText.color = Color.green;
-            Time.timeScale = 0;
+            string NextLevel = "Niveau_";
+            string currentlevelname = SceneManager.GetActiveScene().name;
+            string currentlevel = currentlevelname[currentlevelname.Length - 1].ToString();
+            Transform PlayerManager = GameObject.Find("PlayerManager").transform;
+            for (int i = 0; i < PlayerManager.childCount; i++)
+            {
+                Destroy(PlayerManager.GetChild(i).gameObject);
+            }
+            SceneManager.LoadScene(NextLevel+currentlevel);
         }
 
         private void DisplayEndCanvas()
