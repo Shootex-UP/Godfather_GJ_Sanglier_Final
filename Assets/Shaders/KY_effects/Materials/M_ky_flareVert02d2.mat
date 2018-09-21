@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: M_ky_flareVert02d2
   m_Shader: {fileID: 4800000, guid: 20975feb97e2c4bd2b8cd765f00b7ddf, type: 3}
-  m_ShaderKeywords: _EMISSION _HAVEALPHA_ON
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _EMISSION _HAVEALPHA_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: M_ky_ad_polar_glowB
   m_Shader: {fileID: 4800000, guid: ce1a243d1a230407e8deccc9abe37d36, type: 3}
-  m_ShaderKeywords: _EMISSION _USETEXCOLOR_ON
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _EMISSION _USETEXCOLOR_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
