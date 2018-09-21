@@ -6,14 +6,16 @@ namespace Manager
     public class Player : MonoBehaviour
     {
         public int id;
-        public Color color;
+        //public Color color;
+        public int idPrefabs;
+        public GameObject prefabs;
         public int ControllerId { get; set; }
         // Use this for initialization
 
-        public Player(int Id, Color Color, int Controller)
+        public Player(int Id, int IdPrefabs, int Controller)
         {
             id = Id;
-            color = Color;
+            idPrefabs = IdPrefabs;
             ControllerId = Controller;
         }
 
@@ -35,21 +37,27 @@ namespace Manager
             return id;
         }
 
-        public Color GetColor()
+        /*public Color GetColor()
         {
             return color;
-        }
+        }*/
 
         public int GetControllerId()
         {
             return ControllerId;
         }
+        public void Load(int Id, int IdPrefabs, int Controller)
+        {
 
-        public void LoadPlayer(int Id, Color PlayerColor, int controllerId)
+            id = Id;
+            idPrefabs = IdPrefabs;
+            ControllerId = Controller;
+        }
+        /*public void LoadPlayer(int Id, Color PlayerColor, int controllerId)
         {
             id = Id;
             color = PlayerColor;
             ControllerId = controllerId;
-        }
+        }*/
     }
 }

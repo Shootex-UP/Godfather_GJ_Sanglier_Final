@@ -14,7 +14,7 @@ public class CharacterController : MonoBehaviour {
     public float deadZone;
     private Vector2 Direction;
     public float currentSpeed = 0;
-
+    private SpriteRenderer shadow;
     //Flip
     private SpriteRenderer MyR;
     public bool isFacingRight = true;
@@ -23,18 +23,11 @@ public class CharacterController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         body = GetComponent<Rigidbody2D>();
-        try
-        {
-            controllerId = transform.parent.GetComponent<Manager.Player>().GetControllerId();
-        }
-        catch
-        {
-            
-        }
-        controllerId = 1;
+        controllerId = transform.parent.GetComponent<Manager.Player>().GetControllerId();
 
         //flip
         MyR = gameObject.GetComponent<SpriteRenderer>();
+        shadow = transform.GetChild(0).GetComponent<SpriteRenderer>();
         anchor = transform.parent.GetChild(1);
         anchorScript = anchor.GetComponent<Anchor>();
         Spring = anchor.GetComponent<SpringJoint2D>();
@@ -105,6 +98,7 @@ public class CharacterController : MonoBehaviour {
         {
             isFacingRight = false;
             MyR.flipX = true;
+            shadow.flipX = true;
             Spring.connectedAnchor = new Vector2(-Spring.connectedAnchor.x, Spring.connectedAnchor.y);
             /*
             if (anchorScript.Holding)
@@ -117,6 +111,7 @@ public class CharacterController : MonoBehaviour {
         {
             isFacingRight = true;
             MyR.flipX = false;
+            shadow.flipX = false;
             Spring.connectedAnchor = new Vector2(-Spring.connectedAnchor.x, Spring.connectedAnchor.y);
             /*
             if (anchorScript.Holding)
