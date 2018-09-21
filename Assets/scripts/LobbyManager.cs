@@ -69,7 +69,7 @@ namespace Manager
                                     print(System.Enum.GetName(typeof(KeyCode), code));
                                     //Debug.Log("Joystick n°:" + ControllerId);
                                     //bool PlayerAlreadyJoin = PlayerList.Exists(item => item.ControllerId == ControllerId);
-                                    if (!playerManager.IsPlayerAlreadyInLobby(i_ControllerId))
+                                    if (!playerManager.IsPlayerAlreadyInLobby(i_ControllerId) && button=="Button0")
                                     {
                                         int selectIDprefabs = 0;
                                         while (PrefabsAvailable[selectIDprefabs] == true)

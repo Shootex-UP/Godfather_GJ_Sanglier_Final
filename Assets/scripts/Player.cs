@@ -46,7 +46,13 @@ namespace Manager
         {
             return ControllerId;
         }
+        public void Load(int Id, int IdPrefabs, int Controller)
+        {
 
+            id = Id;
+            idPrefabs = IdPrefabs;
+            ControllerId = Controller;
+        }
         /*public void LoadPlayer(int Id, Color PlayerColor, int controllerId)
         {
             id = Id;

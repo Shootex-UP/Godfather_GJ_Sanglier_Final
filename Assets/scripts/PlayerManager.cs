@@ -52,22 +52,9 @@ namespace Manager
         public int AddPlayer(int ControllerId, int idPrefabs)
         {
             int id = PlayerList.Count + 1;
-            Player player = new Player(id, idPrefabs, ControllerId);//Instantiate(PlayerPrefabs, transform);
-            //player.LoadPlayer(id, PlayerColorList[PlayerList.Count], ControllerId);
-            //Player NewPlayer = new Player(id, PlayerColorList[PlayerList.Count], ControllerId);
+            Player player = new Player(id, idPrefabs, ControllerId);
             PlayerList.Add(player);
             Debug.Log("Controller id:" + ControllerId + " added as Player n°" + id);
-
-            /*for (int x = 0; x < character_selected.Length; x++)
-            {
-                if (!character_selected[x])
-                {
-                    character_selected[x] = true;
-                    pj_selected[id - 1] = x;
-                    PicutreList[id - 1].GetComponent<Image>().sprite = CharacterList[pj_selected[id - 1]];
-                    break;
-                }
-            }*/
             Debug.Log(id);
             return id;
         }
@@ -112,7 +99,8 @@ namespace Manager
             foreach (var item in PlayerList)
             {
                 Transform CurrentSpawn = GameObject.Find("SpawnTransformFolder").transform.GetChild(item.id);
-                GameObject NewPlayer = Instantiate(GameObject.Find("LobbyManager").GetComponent<LobbyManager>().GetPrefabsById(item.idPrefabs), CurrentSpawn.position, Quaternion.identity, transform); ;
+                GameObject NewPlayer = Instantiate(GameObject.Find("LobbyManager").GetComponent<LobbyManager>().GetPrefabsById(item.idPrefabs), CurrentSpawn.position, Quaternion.identity, transform);
+                NewPlayer.GetComponent<Player>().Load(item.id, item.idPrefabs, item.ControllerId);
             }
         }
     }
