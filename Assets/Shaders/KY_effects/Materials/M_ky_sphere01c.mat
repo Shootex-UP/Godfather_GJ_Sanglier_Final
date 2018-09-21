@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: M_ky_sphere01c
   m_Shader: {fileID: 4800000, guid: a502293f22f734009bb5e1c16e905e3f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _EMISSION _HAVEALPHA_ON
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 483edbd854b394459a626d4e8a3f5032, type: 3}
+        m_Texture: {fileID: 2800000, guid: 00d1dc61304fe4183bb5dae9ee4dd842, type: 3}
         m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -55,7 +55,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _noseTex:
-        m_Texture: {fileID: 2800000, guid: 5490211bd120a46aa9009b4de62dd44b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8062eed8998884e93afb5b18cc856c73, type: 3}
         m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -76,12 +76,12 @@ Material:
     - _UVSec: 0
     - _UVcompY: 1
     - _ZWrite: 1
-    - _alphaDensity: 1
-    - _alphaPower: 1.5
-    - _baseTexDensity: 1
+    - _alphaDensity: 0.98
+    - _alphaPower: 0.5
+    - _baseTexDensity: 2
     - _baseTexRot: 0
-    - _baseTexSpdX: 1
-    - _baseTexSpdY: 3
+    - _baseTexSpdX: 0
+    - _baseTexSpdY: 1
     - _baseTexU: 1
     - _baseTexV: 1
     - _borderP: 0.3
@@ -89,18 +89,18 @@ Material:
     - _compYInv: 0
     - _correctEmissive: 0
     - _db: 1
-    - _depthBlend: 1
-    - _emissive: 1.3
+    - _depthBlend: 0
+    - _emissive: 0.84
     - _fresInv: 0
     - _fresPower: 1
     - _fresnelOff: 0
-    - _haveAlpha: 1
+    - _haveAlpha: 0
     - _node_5138: 1
     - _node_5218: 10
-    - _noiseDensity: 1
-    - _noisePower: 1
+    - _noiseDensity: 0
+    - _noisePower: 0
     - _noiseTexSpdX: 0
-    - _noiseTexSpdY: 1
+    - _noiseTexSpdY: 0
     - _noiseTexU: 1
     - _noiseTexV: 1
     - _notUseBch: 0
@@ -112,7 +112,7 @@ Material:
     - _useDepthBlend: 0
     - _useTexColor: 0
     - _vertAlphaDensity: 1
-    - _vertColorDensity: 1
+    - _vertColorDensity: 0.78
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

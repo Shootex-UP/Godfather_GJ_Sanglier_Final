@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Zer0_vaporwave
+  m_Shader: {fileID: 4800000, guid: 0835c42797812494397bc703ad617a1f, type: 3}
+  m_ShaderKeywords: _ENABLEBLUIE_ON _ENABLEGREEN_ON _ENABLERED_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3800
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _Effect: -0.77
+    - _EnableBluie: 1
+    - _EnableGreen: 1
+    - _EnableRed: 1
+    - _OffsetXBlue: 0
+    - _OffsetXGreen: 0
+    - _OffsetXRed: 0
+    - _OffsetYBlue: 0
+    - _OffsetYGreen: 0
+    - _OffsetYRed: 0
+    - __dirty: 0
+    m_Colors: []
