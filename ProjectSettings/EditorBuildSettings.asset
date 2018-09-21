@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototype_Final.unity
     guid: 9042106ed16b9eb41a81f078da1d6a9f
+  - enabled: 1
+    path: Assets/Scenes/Prototype_Final_Elias.unity
+    guid: aac4f9fbf3821744f8a9d3c5af9e7d06
+  - enabled: 1
+    path: Assets/Scenes/Niveau_1.unity
+    guid: 88a6720e8a6226641a4b4c8b368dce15
+  - enabled: 1
+    path: Assets/Scenes/Menu_Select_Niveau.unity
+    guid: 9e7dbfb60cedf5640ac4883ef05eea30
   m_configObjects: {}

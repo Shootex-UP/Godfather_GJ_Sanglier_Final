@@ -40,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1129597332166070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.553176, y: 6.8921885, z: 0.01392492}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6210681, y: 0.6210681, z: 0.6210681}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +59,7 @@ Rigidbody2D:
   m_Mass: 15
   m_LinearDrag: 5
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -126,6 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0916cbada689bb468543326cc3b6f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ObjectColliding: []
+  Barre: {fileID: 1838964166858834, guid: 33dd3b6923c9a0a4484ed0bf319f54f3, type: 2}
 --- !u!114 &114458793499772838
 MonoBehaviour:
   m_ObjectHideFlags: 1

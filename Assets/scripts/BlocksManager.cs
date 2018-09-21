@@ -31,6 +31,11 @@ public class BlocksManager : MonoBehaviour {
                 HighestBlockValue = CurrentChild.position.y;
             }
         }
+        if (HighestBlockValue > 0)
+        {
+            HighestBlockValue -= 3;
+        }
+        
         Vector3 pos = new Vector2(0, HighestBlockValue + CameraOffsetY);
         pos.y = Mathf.Lerp(MainCamera.position.y, pos.y, CameraMovementSpeed);
         MainCamera.position = new Vector3(MainCamera.position.x, pos.y, MainCamera.position.z);

@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/scripts/PlayerManager.cs
+Assets/scripts/PlayerManager.cs

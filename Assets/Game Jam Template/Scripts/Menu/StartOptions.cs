@@ -24,7 +24,7 @@ public class StartOptions : MonoBehaviour {
 	private ShowPanels showPanels;										//Reference to ShowPanels script on UI GameObject, to show and hide panels
     private CanvasGroup menuCanvasGroup;
 
-    public Scene Scene_toGo;
+    public string Scene_ToLoad;
 
 
     void Awake()
@@ -141,7 +141,7 @@ public class StartOptions : MonoBehaviour {
         HideDelayed();
         Debug.Log("Start - Triger");
 
-        AsyncOperation async = SceneManager.LoadSceneAsync("Menu_Select_Niveau"); 
+        AsyncOperation async = SceneManager.LoadSceneAsync(Scene_ToLoad); 
 
         // While the asynchronous operation to load the new scene is not yet complete, continue waiting until it's done.
         while (!async.isDone)

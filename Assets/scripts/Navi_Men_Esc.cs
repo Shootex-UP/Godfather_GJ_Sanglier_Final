@@ -34,7 +34,7 @@ public class Navi_Men_Esc : MonoBehaviour {
                     menu_selected--;
                     if (menu_selected < 0)
                     {
-                        menu_selected = Menu_elements.Length;
+                        menu_selected = Menu_elements.Length-1;
                     }
                 }
                 else
