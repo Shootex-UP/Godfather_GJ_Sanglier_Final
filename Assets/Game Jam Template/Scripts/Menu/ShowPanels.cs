@@ -18,12 +18,12 @@ public class ShowPanels : MonoBehaviour {
     private void SetSelection(GameObject panelToSetSelected)
     {
 
-        activePanel = panelToSetSelected;
-        activePanelMenuObject = activePanel.GetComponent<MenuObject>();
-        if (activePanelMenuObject != null)
-        {
-            activePanelMenuObject.SetFirstSelected();
-        }
+        //activePanel = panelToSetSelected;
+        //activePanelMenuObject = activePanel.GetComponent<MenuObject>();
+        //if (activePanelMenuObject != null)
+        //{
+        //    activePanelMenuObject.SetFirstSelected();
+        //}
     }
 
     public void Start()
