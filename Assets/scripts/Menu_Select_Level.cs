@@ -10,13 +10,8 @@ public class Menu_Select_Level : MonoBehaviour {
     public int lvl_selected = 1;
     public int num_lvls = 10;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 
         if (f_delay < 1.5f)
         {
@@ -58,6 +53,11 @@ public class Menu_Select_Level : MonoBehaviour {
             else if (Input.GetKeyUp(KeyCode.Joystick1Button0))
             {
                 Debug.Log("Level " + lvl_selected + " selected");
+                //Instantiate gameobject
+                //Add component SCRIPTNAME
+                //GET SCRIPT
+                //SET STRING VALUE
+                G_Variable.Lvl_selected = "Niveau_" + lvl_selected.ToString();
                 SceneManager.LoadScene("Lobby");
             }
         }
