@@ -52,33 +52,10 @@ public class CharacterController : MonoBehaviour {
                 currentSpeed -= (BrakeSpeed * Time.deltaTime);
 
             Direction = body.velocity.normalized;
-            /*
-            if (body.velocity.magnitude > MaxSpeed)
-            {
-                body.velocity = body.velocity.normalized * MaxSpeed;
-            }
-            else
-            {
-                //float HorizontalAxis = Input.GetAxis("L_XAxis_" + controllerId.ToString()) * (accelerationSpeed * Time.fixedDeltaTime);
-                //float VerticalAxis = -Input.GetAxis("L_YAxis_" + controllerId.ToString()) * (accelerationSpeed * Time.fixedDeltaTime);
-                //Debug.Log(VerticalAxis);
-                currentSpeed += accelerationSpeed * Time.deltaTime;
-                Vector2 NewDirection = Direction.normalized * currentSpeed;
-                //Debug.Log(Direction.ToString());
-                //Debug.Log(body.velocity.magnitude+"/"+MaxSpeed);
-            }*/
         }
         else
         {
             currentSpeed += accelerationSpeed * Time.deltaTime;
-            /*
-            Vector2 BrakeVector = -Direction.normalized * ;
-            if (body.velocity.magnitude < BrakeVector.magnitude)
-                body.velocity = new Vector2(0f, 0f);
-            else
-                body.velocity += BrakeVector;
-            */
-
         }
         if (currentSpeed > MaxSpeed)
         {

@@ -41,7 +41,7 @@ namespace Manager
 
         public void Win()
         {
-            DisplayEndCanvas();
+            //DisplayEndCanvas();
             EndText.text = "Win";
             EndText.color = Color.green;
             string NextLevel = "Niveau_";
@@ -52,7 +52,7 @@ namespace Manager
             {
                 Destroy(PlayerManager.GetChild(i).gameObject);
             }
-            SceneManager.LoadScene(NextLevel+currentlevel);
+            SceneManager.LoadScene(NextLevel+(currentlevel+1));
         }
 
         private void DisplayEndCanvas()
